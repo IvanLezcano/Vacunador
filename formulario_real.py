@@ -15,7 +15,7 @@ app = Flask(__name__)
 miConexion=sqlite3.connect("PrimeraBase.db")
 miCursor= miConexion.cursor()
 
-#miCursor.execute("DROP TABLE PRODUCTOS")
+#miCursor.execute("DROP TABLE PACIENTES")
 #miCursor.execute("CREATE TABLE PACIENTES (NOMBRE_PACIENTE VARCHAR(50),DNI INTEGER, PRIORIDAD VARCHAR(20))")
 
 
