@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<style>body{background-color: rgb(244, 247, 75);} </style>
+  <head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='estilos2.css') }}">
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1 class="titulo" align="center">Formularo de vacunacion</h1>
+    <h3>Bienvenido, Porfavor llene la planilla de datos</h3>
+    <form action="/guardar_info" method="post">
+          <label for="nombre">Nombre Completo:</label>
+          <input type="text" id="nombre" name="nombre"><br><br>
+          <label for="dni">DNI:</label>
+          <input type="text" id="dni" name="dni"><br><br>
+          <label for="fecha_de_nacimiento">Fecha de Nacimiento:</label>
+          <input type="text" id="fecha_de_nacimiento" name="fecha_de_nacimiento"><br><br>
+          <label for="edad">Edad:</label>
+          <input type="text" id="edad" name="edad"><br><br>
+          <label for="direccion">Direccion:</label>
+          <input type="text" id="direccion" name="direccion"><br><br>
+          <label for="">Eliga un sexo:</label><br><br>
+          <label for="masculino">Hombre:</label>
+          <input type="radio" id="hombre" value="hombre" name="sexo"><br><br>
+          <label for="femenino">Mujer:</label>
+          <input type="radio" id="mujer" value="mujer" name="sexo"><br><br>
+          <label for="cormobilidad">Cormobilidades:</label><br><br>
+          <textarea name="cormobilidad" id="cormobilidad" cols="60" rows="7"placeholder="Enfermedades Preexistentes"></textarea><br><br>
+
+
+
+          <label for="centro">Elija Su Hospital Mas Cercano: </label>
+
+          <select name="centro" id="centro">
+
+            <option value="Hospital Gandulfo">Hospital Gandulfo (Zona sur)</option>
+            <option value="Hospital pirovano">Hospital pirovano(CABA)</option>
+            <option value="Hospital Fernandez">Hospital Fernandez(CABA)</option>
+            <option value="Hospital de niños">Hospital de niños (San Justo)</option>
+            <option value="Hospital Gral Paz">Hospital Gral Paz (Temperley)</option>
+          </select>
+
+        </br>
+        </br>
+        <label for="email">dejame tu email</label>
+        <input type="email" placeholder="Pone algo" value="@gmail.com" id="email" name="email"><br><br>
+
+          
+
+            
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+      
+
+
+
+
+        <input type="submit" value="Guardar datos">
+
+        <a href="/"><input type="button" value="Atras"> </a>
+          
+      </br>
+    </br>
+         
+        <a class="atras" href="{{url_for("retorno") }}"> Volver al incio!</a>
+
+    </form>
+    
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

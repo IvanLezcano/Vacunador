@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <a href="{{ url_for('index') }}">&larr; Retornar</a>
+
+    <h1>Configuraciones generales 💉</h1>
+
+    <form action="/guardado" method="post">
+
+        <label for="caplicaciones">Ingrese la cantidad de aplicaciones por centro:</label>
+        <input type="text" id="caplicaciones" name="caplicaciones"><br><br>
+
+
+        <label for="taplicación">Indique el tiempo destinado para cada aplicación:</label>
+        <input type="text" id="taplicación" name="taplicación"><br><br>
+
+
+        <label for="hdesde">Ingrese horario del comienzo de las aplicaciones:</label>
+        <input type="text" id="hdesde" name="hdesde"><br><br>
+
+        <label for="hhasta">Ingrese horario de finalización de la aplicación:</label>
+        <input type="text" id="hhasta" name="hhasta"><br><br>
+
+        <input type="submit" value="Guardar Datos">
+
+</form>
+</body>
+</html>
